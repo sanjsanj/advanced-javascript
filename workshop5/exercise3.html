@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>exercise 3</title>
+        <style type="text/css">
+            body { 
+                font-family: sans-serif;
+            }
+            #element-wrapper {
+                list-style-type: none; 
+                padding: 0; 
+                margin: 0;
+            } 
+            .element {
+                cursor: pointer; 
+                width: 300px; 
+                margin-bottom: 30px;
+                padding: 20px;
+                margin: 20px 0;
+                border: 1px solid #eee;
+                border-left-width: 5px;
+                border-radius: 3px;
+                border-left-color: #1b809e;
+            } 
+            .form-inline {margin-bottom: 40px;} 
+            .add-button {cursor: pointer;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 id="header">Exercise 3</h1>
+
+            <div class="form-inline">
+                <input type="text" id="element-description" value="" placeholder="new element description" />
+                <button type="button" id="add-button">Add new element</button>
+            </div>
+
+            <ul id="element-wrapper">
+                <li class="element">Element with some description</li>
+                <li class="element">Element with some more description</li>
+                <li class="element">Element with yet another some description!</li>
+            </ul>
+        </div>
+        
+        <script src="exercise3.js"></script>
+    </body>
+</html>
