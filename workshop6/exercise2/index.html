@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Workshop 6</title>
+        <style type="text/css">.form-inline {margin: 2em 0;}</style>
+        <style type="text/css">
+            body { padding: 2em;}
+            .form-inline {margin: 1em 0;}
+            .form-inline .form-control {
+                display: inline-block;
+                vertical-align: middle;
+                width: auto;
+            }
+            .btn {
+                background-image: none;
+                border: 1px solid #2e6da4;
+                border-radius: 4px;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857;
+                margin-bottom: 0;
+                padding: 6px 12px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+                background-color: #337ab7;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="row-fluid">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <h1 class="header">Workshop 6 - Calculator</h1>
+
+                    <div id="calc">
+
+                        <!-- The number buttons -->
+                        <div class="form-inline" id="calc-digits">
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="0">0</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="1">1</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="2">2</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="3">3</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="4">4</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="5">5</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="6">6</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="7">7</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="8">8</p>
+                            <p class="btn btn-primary button-digit" data-type="digit" data-value="9">9</p>
+                        </div>
+                        
+                        <!-- The operation buttons -->
+                        <div class="form-inline" id="calc-control">
+                            <p class="btn btn-primary button-add" data-type="add" data-value="add">+</p>
+                            <p class="btn btn-primary button-sub" data-type="sub" data-value="sub">-</p>
+                        </div>
+                        
+                        <!-- The action buttons -->
+                        <div class="form-inline" id="calc-enter">
+                            <p class="btn btn-primary button-clear" data-type="clear" data-value="clear">Clear</p>
+                            <p class="btn btn-primary button-result" data-type="result" data-value="result">=</p>
+                        </div>
+                        
+                        <!-- The "view" -->
+                        <div class="form-inline">
+                            <input type="text" id="calc-view" class="form-control" value="" data-value="view" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="math.js"></script>
+        <script src="calculator.js"></script>
+
+    </body>
+</html>

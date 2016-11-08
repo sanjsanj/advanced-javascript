@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Recap exercise</title>
+        <style>
+        body {
+            font-family: sans-serif;
+            font-size: 150%;
+            padding: 20px 15%;
+        }       
+        .button {
+            color: #000;
+            background-color: #FFA500;
+            padding: 0.25em 1em;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        #headline {
+            background-color: #eee;
+            color: #111;
+            padding: 1em;
+            margin: 20px 0;
+        }
+        #content {
+            padding: 1em;
+            background-color: #eeeeee;
+        }
+        #headline.yellow {
+            background-color: #FFFF00;
+            color: #333;
+        }
+        #headline.green {
+            background-color: #1C7D1C;
+            color: #F5F5F5;
+        }
+        #headline.clicked {
+            font-style: italic;
+            border: 5px dotted #000;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <p>       
+            <span class="button" id="button1">
+                Button 1
+            </span>
+            <span class="button" id="button2">
+                Button 2
+            </span>
+            <span class="button" id="button3">
+                Button 3
+            </span>
+        </p>
+        
+        <h1 id="headline">JavaScript is Cool ;)</h1>
+        
+        <div id="content">
+            <span class="button" id="button4">
+                Add content
+            </span>        
+        </div>
+        
+        <script src="recap.js"></script>
+    </body>
+</html> 
+
+
+
