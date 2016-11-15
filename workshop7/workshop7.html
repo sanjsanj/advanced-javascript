@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Workshop 7</title>
+
+        <link href="assets/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="assets/products.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="header">Workshop 7 - Product Listing</h1>
+                </div>
+                <div class="col-md-2 col-md-offset-2">
+                    <!-- The filter buttons -->
+                    <div id="filters">
+                        <p class="filter btn btn-warning" data-category="phone">Phones</p>
+                        <p class="filter btn btn-danger" data-category="laptop">Laptops</p>
+                        <p class="filter btn btn-primary" data-category="toy">Toys</p>
+                        <p class="filter btn btn-success" data-category="book">Books</p>
+                        <p class="filter btn btn-default" data-category="all">All</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Product list is added to this div -->
+                    <div id="products-list"></div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/jquery.min.js"></script>
+        <script src="workshop7.js"></script>
+    </body>
+</html>
