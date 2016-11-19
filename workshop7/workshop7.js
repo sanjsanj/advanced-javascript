@@ -31,11 +31,17 @@ var ProductLister = (function () {
               url: "http://gerardluskin.com/city/service/products/?callback=&category=" + category,
               dataType: "jsonp",
               success: function (data, textStatus, jqXHR) {
-                jsonToHTML(data.products);
-                addHTMLtoDOM(htmlToReturn);
+                  if (!data.error) {
+                      jsonToHTML(data.products);
+                      addHTMLtoDOM(htmlToReturn);
+                  } else {
+                      productsList.className = "";
+                      productsList.innerHTML = data.error;
+                  };
               },
               error: function (jqXHR, textStatus, err) {
-                  console.log(err);
+                  productsList.className = "";
+                  productsList.innerHTML = err;
               },
               complete: function (jqXHR, textStatus) {
               }
