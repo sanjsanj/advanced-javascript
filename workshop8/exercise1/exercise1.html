@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Workshop 8</title>
+        <link href="../assets//bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+        <style type="text/css"> 
+        .loading {
+            background: url(../assets/ajax-loader.gif) no-repeat center center;
+        }
+        .loading .gm-style {
+            display: none;
+        }
+        .align-right {
+            margin-left: 10px; 
+            float: right;
+        }
+        </style>
+    </head>
+    <body>
+
+
+        <div class="container">
+
+            <div class="page-header">
+                <h1>Workshop 8 - Local Storage</h1>
+            </div>
+            
+            <form id="adduser">
+                <div class="form-group">
+                    <label for="input-name">Name</label>
+                    <input name="userName" type="text" class="form-control" id="input-name">
+                </div>
+                <div class="form-group">
+                    <label for="input-email">Email Address</label>
+                    <input name="userEmail" type="text" class="form-control" id="input-email">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" id="add-button">Add user</button>
+                    
+                    <button class="btn btn-primary align-right" id="clear-button">Clear my local storage!</button>
+                    
+                    <button class="btn btn-primary align-right" id="restore-button">Restore previous session</button>
+                </div>
+            </form>
+        </div>
+        <script src="form-recall.js"></script>
+    </body>
+</html>
