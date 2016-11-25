@@ -52,7 +52,6 @@ var FormRecall = (function () {
     return {
         init: init
     };
-
 })();
 
 FormRecall.init();

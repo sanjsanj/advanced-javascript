@@ -8,15 +8,15 @@
             #map-wrapper {
                 width: 100%;
                 height: 400px;
-            } 
+            }
             .another-location input {
-                margin-right: 10px; 
+                margin-right: 10px;
                 height: 19px;
-            } 
+            }
             .loading {
                 background: url(../assets/ajax-loader.gif) no-repeat center center;
             }
-            .loading .gm-style {
+            .loading > :first-child {
                 /* this rule hides the map tiles while the loading image is displayed */
                 display: none;
             }
@@ -30,11 +30,11 @@
             <div class="page-header">
                 <h1>Workshop 8 - Geolocation</h1>
             </div>
-            
+
             <div class="form-group">
                 <button class="btn btn-primary" id="find-me">Find my location!</button>
             </div>
-            
+
             <div id="map-wrapper"></div>
 
         </div>
