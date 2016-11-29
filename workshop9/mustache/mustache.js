@@ -14,3 +14,7 @@ var peopleData = {
         }
     ]
 };
+
+var tpl = "{{#people}}<li>{{name}}</li>{{/people}}";
+var output = Mustache.render(tpl, peopleData);
+document.getElementById("page-header").insertAdjacentHTML("beforeend", output);
