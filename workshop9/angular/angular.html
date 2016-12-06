@@ -7,40 +7,41 @@
         <style type="text/css">
         .header {
             margin-bottom: 50px;
-        } 
+        }
         #box {
-            margin: 1em 0; 
+            margin: 1em 0;
             padding: 1.25em;
-            border: 2px solid black; 
-            width: 18em; 
-        } 
+            border: 2px solid black;
+            width: 18em;
+        }
         .blue {
             background-color: blue;
-        } 
+        }
         .yellow {
             background-color: yellow;
-        } 
+        }
         .red {
             background-color: red;
         }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container" ng-app="">
 
             <h1 class="header" id="page-header">Angular Workshop</h1>
 
             <!-- Convert this to an Angular app -->
             <label>Colour:</label>
-            <input type="text" />
-            <div id="box" class="">
+            <input type="text" ng-model="data.color" />
+            <div id="box" ng-class="data.color">
                 I have a border,
                 <br />
                 now give me a background colour!
             </div>
-            
-    
+
+
         </div>
+        <script src="app.js"></script>
         <script src="../lib/angular.min.js"></script>
     </body>
 </html>
